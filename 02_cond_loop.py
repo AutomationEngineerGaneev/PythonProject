@@ -29,3 +29,11 @@ for i in range(1, 11):
     # List Comprehension
 lc = [i * i for i in range(1, 11) if i % 2 == 0]
 print(lc)
+
+# while
+# до 2 символа (100 и тд не проходят)
+i = 0
+while len(str(i)) < 3:
+    print(i)
+    #i = i + 1
+    i += 1

@@ -25,7 +25,7 @@ print(s)
 
 print(s[0])
 print(s[1:5]) #slice
-print(s[10:-1]) #size of str -1 symbol
+print(s[10:-1]) #slice until the penultimate symbol(size of str -1 symbol)
 
 
 list_of_something =[1,2,3,4,'abc',[1,True]]
@@ -34,7 +34,7 @@ print(list_of_something[0])
 print(list_of_something[5][0])
 print(list_of_something[3:4])
 print(list_of_something[3:-1])
-
+# словари или Json
 dictionary = {
     'key': 'value',
     'Moscow':'Москва',

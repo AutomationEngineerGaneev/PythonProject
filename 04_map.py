@@ -18,3 +18,21 @@ list_of_words = ['one', 'two', 'list', '', 'dict']
 upper_list_of_words = list(map(str.upper,list_of_words))
 print(upper_list_of_words)
 
+# ================================
+#   Встроенные функции часть-2
+# ================================
+
+# map(func_link, <итератор>) --> итератор,
+# каждый элемент которого - результат применения функции funk_link к элементам исходного итератора
+print(list(map(len, ['mother', 'father', 'daughter', 'son'])))
+print(list(map(lambda x: x / 2, [2, 4, 5, 10])))
+# lambda - лямбда-функция (безымянная функция).
+
+dict_a = [{'name': 'python', 'points': 10}, {'name': 'java', 'points': 8}]
+
+map(lambda x: x['name'], dict_a)  # Вернет: ['python', 'java']
+
+map(lambda x: x['points'] * 10, dict_a)  # Вернет: [100, 80]
+
+map(lambda x: x['name'] == "python", dict_a)  # Вернет: [True, False]
+

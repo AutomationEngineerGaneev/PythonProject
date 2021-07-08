@@ -1,3 +1,5 @@
+import pytest
+
 def test_simple0():
     mylist = 1, 2, 3, 4, 5
     # тоже самое, кортеж mylist = (1, 2, 3, 4, 5)

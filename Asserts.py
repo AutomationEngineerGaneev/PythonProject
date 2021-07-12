@@ -18,6 +18,9 @@ def test_simple2():
     dict = {'key': 'value',
             'Moscow': 'Москва', }
     assert 'Moscow' in dict
+    assert 'Москва' in dict['Moscow']
+    print()
+    print(dict['Moscow'])
 
 
 def test_uppercase():
